@@ -64,7 +64,7 @@ function Hero() {
             variants={textVariants}
             animate="scrollButton"
             src="/scroll.png"
-            alt=""
+            alt="icône souris"
           />
         </motion.div>
       </div>
@@ -77,7 +77,7 @@ function Hero() {
         Web Developer
       </motion.div>
       <div className="imageContainer">
-        <img src="/heros.png" alt="Mon portrait " />
+        <img src="/hero.png" alt="Mon portrait "/>
       </div>
     </div>
   );

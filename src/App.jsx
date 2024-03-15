@@ -1,27 +1,26 @@
 import './app.scss'
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-
+import Parralax from './components/parallax/Parralax';
 
 
 
 const App = () => {
   return (
-  <>
-  <section id='Homepage'> 
-    <Navbar/>
-    <Hero/>
-  </section>
-  <section id='About Me'>Parallax</section>
-  <section>About me </section>
-  <section id='Skills'>Parallax</section>
-  <section>Skills</section>
-  <section id='Projects'>Parallax</section>
-  <section> Projects </section>
-  <section id='Contact'>Parallax</section>
-  <section >Contact Me</section>
-  </> 
-  )
+    <>
+      <section id='Homepage'> 
+        <Navbar />
+        <Hero />
+      </section>
+      <section id='About Me'><Parralax type="About Me" /></section>
+      <section>About me </section>
+      <section id='Skills'> Skills </section>
+      <section id='Projects'> <Parralax type="Projects" /> </section>
+      <section> Projects </section>
+      <section id='Contact'>Contact Me</section>
+    </> 
+  );
 };
+
 
 export default App;
