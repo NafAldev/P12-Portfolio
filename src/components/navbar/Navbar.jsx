@@ -13,10 +13,14 @@ const Navbar = () => {
         initial={{opacity:0, scale:0.5}} 
         animate={{opacity:1, scale:1}} 
         transition={{duration:0.5}}> 
-        <span> Naf Dev</span>
+        <span> NAF DEV</span>
         <div className='social'>
-            <FontAwesomeIcon icon={faGithub} className='navbar-icon' />
-            <FontAwesomeIcon icon={faLinkedin} className='navbar-icon' /> 
+        <a href='https://github.com/NafAldev' >
+          <FontAwesomeIcon icon={faGithub} className='navbar-icon'/>
+        </a>
+        <a href='#'>
+          <FontAwesomeIcon icon={faLinkedin} className='navbar-icon' /> 
+        </a>
         </div>
       </motion.div>
     </div>

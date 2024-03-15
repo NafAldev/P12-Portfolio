@@ -1,4 +1,5 @@
 import './app.scss'
+import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 
 
@@ -9,8 +10,9 @@ const App = () => {
   <>
   <section id='Homepage'> 
     <Navbar/>
+    <Hero/>
   </section>
-  <section id='About'>Parallax</section>
+  <section id='About Me'>Parallax</section>
   <section>About me </section>
   <section id='Skills'>Parallax</section>
   <section>Skills</section>
