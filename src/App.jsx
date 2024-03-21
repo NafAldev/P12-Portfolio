@@ -3,6 +3,7 @@ import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import Parralax from './components/parallax/Parralax';
 import Contact from './components/contact/Contact';
+import Porfolio from './components/porfolio/Portfolio';
 
 
 
@@ -17,7 +18,7 @@ const App = () => {
       <section>About me </section>
       <section id='Skills'> Skills </section>
       <section id='Projects'> <Parralax type="Projects" /> </section>
-      <section> Projects </section>
+      <Porfolio/>
       <section id='Contact'><Contact/></section>
     </> 
   );

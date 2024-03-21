@@ -75,9 +75,7 @@ function Hero() {
         animate="animate"
       >
         Web Developer
-      </motion.div>
-      <div className="imageContainer">
-      </div>
+      </motion.div>   
     </div>
   );
 }

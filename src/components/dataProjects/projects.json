@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "cover": "../img/argentbank.webp",
+      "title": "Argent-Bank ",
+      "description": "Application Bancaire React-Redux",
+      "competence" :"Ce projet m'a permis d'utiliser les données du back-end via des appels API, de configurer des routes API client/serveur et d'utiliser Redux pour gérer les données front-end.",
+      "lien": "https://github.com/NafAldev/P11-ArgentBank.git"
+    
+    },
+    {
+        "id": 2,
+        "cover": "../img/nina.webp",
+        "title": "Nina Carducci",
+        "description": "Opptimisation du SEO",
+        "competence" : "Ce projet m'a offert l'opportunité  de comprendre l'importance des enjeux liés au SEO dans le monde du développement web.",
+        "lien": "https://github.com/NafAldev/Nina.Carducci.git"
+        
+    },
+    {
+        "id": 3,
+        "cover": "../img/kasa.webp",
+        "title": "Kasa",
+        "description": " Application immobilière React",
+        "competence" :"Ce projet a été l'occasion de renforcer ses compétences en développement web front-end grâce à l'utilisation de technologies telles que React, React Router, SASS et les animations CSS.",
+        "lien": "https://github.com/NafAldev/P8_KASA"
+        
+    }
+
+]
+  
+  
