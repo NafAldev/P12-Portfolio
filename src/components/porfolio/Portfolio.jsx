@@ -22,6 +22,11 @@ const Single = ({ item }) => {
               <h2>{item.title}</h2>
               <h4>{item.description}</h4>
               <p>{item.competence}</p>
+              <div className='icons-tech'>
+                {item.icons.map((icon, index) => (
+                  <img key={index} src={icon} alt={"icons"} />
+                ))}
+             </div>
               <button>Lien Git hub</button>
             </motion.div>
           </div>
@@ -46,7 +51,7 @@ const Single = ({ item }) => {
     return (
       <div className="portfolio" ref={ref}>
         <div className="progress">
-          <h1>Featured Works</h1>
+          <h1>Featured Projects</h1>
           <motion.div style={{ scaleX }} className="progressBar"></motion.div>
         </div>
         {items.map((item) => (

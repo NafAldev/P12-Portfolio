@@ -1,91 +1,177 @@
-
+@import "../../app.scss";
 
 .portfolio {
-    position: relative;
+  position: relative;
   
-    .progress {
-      position: sticky;
-      top: 0;
-      left: 0;
-      padding-top: 50px;
-      text-align: center;
-      color: orange;
-      font-size: 36px;
-  
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 36px;
+
+    @include mobile {
+      padding-top: calc( 100vh - 50px);
+      font-size: 24px;
       
+    }
+    
+    @include tablet{
+      padding:15px ;
+    }
+
+    
+
+    h1{
+      @include tablet{
+        font-size: 60px;
       }
-  
-      .progressBar {
-        height: 10px;
-        background-color: white;
+
+      @include mobile {
+        font-size: 30px;
       }
     }
-  
-    .container {
+    .progressBar {
+      height: 10px;
+      background-color: white;
+      
+      
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-  
-      .wrapper {
-        max-width: 1366px;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-  
-        
-  
-        .imageContainer {
-          flex: 1;
-          height: 50%;
-          border-radius: 5px;   
-          overflow: hidden;  
+      gap: 50px;
+      border:  1px solid green ;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      @include tablet{
+        padding: 0 20px ;
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+        border-radius: 5px;   
+        overflow: hidden;  
+       
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+          padding: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;  
+
+          @include mobile {
+            object-fit: contain;
+
           }
-  
-          img {
+
+          @include tablet{
             width: 100%;
-            height: 100%;
-            border-radius: 5px;            
-  
-            
+          }
+
+        
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          gap: 5px;
+        }
+        @include tablet{
+          gap: 15px;
+        }
+
+        h2 {
+          font-size: 72px;
+
+          @include mobile {
+            font-size: 35px;
+          }
+          @include tablet{
+            font-size: 50px;
+            gap: 15px;
           }
         }
-  
-        .textContainer {
-          flex: 1;
+
+        h4{
+          font-size: 20px;
+
+          @include mobile {
+            font-size:20px ;
+          }
+        }
+
+        p {
+          color: white;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 15px;
+          }
+          @include tablet {
+            font-size: 18px;
+          }
+
+          
+        }
+        .icons-tech{
           display: flex;
-          flex-direction: column;
-          gap: 30px;
-  
-        
-          }
-  
-          h2 {
-            font-size: 60px;
-  
-           
-          }
-  
-          p {
-            color: lightgrey;
-            font-size: 20px;
-            font-weight: bold;
-  
-           
+          gap: 15px;
+          
+          img {
+            @include mobile {
+              height: 40px;
+              width: 40px;
             }
           }
-  
-          button {
-            background-color: orange;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            width: 200px;
-            cursor: pointer;
-            font-weight: bold;
-          }
+        }
+
+        button {
+          background-color: rebeccapurple;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

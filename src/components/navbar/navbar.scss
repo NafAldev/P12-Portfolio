@@ -1,26 +1,48 @@
-.navbar{
-    height: 100px;
+@import "../../app.scss";
 
-    .wrapper{
-        max-width: 1250px;
-        margin: auto ;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+.navbar {
+  height: 100px;
 
-        span {
-            font-weight: bold;
-        }
+  .wrapper {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 
-        .social {
-            display: flex;
-            gap: 15px;
-
-            .navbar-icon{
-               width: 30px; 
-               height: 30px;
-            }
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
     }
+    @include tablet {
+      justify-content: flex-end;
     }
+
+    span {
+      font-weight: bold;
+
+      @include mobile {
+        display: none;
+      }
+
+      @include tablet{
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+
+      @include tablet {
+        padding-right: 20px;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }

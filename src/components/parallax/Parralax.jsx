@@ -27,7 +27,7 @@ const Parralax = ({type}) => {
       <motion.h1 style={{y :yText}}>{type ==="About Me" ? "Who i am ?" : "What i did?"}</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div className="planets" style={{y:yBg, backgroundImage: `url(${
-        type === "About Me" ?"/planets.png" : "/sun.png"
+        type === "About Me" ?"/parralex/planets.png" : "/parralex/sun.png"
         })`,
       }}>
       </motion.div>
