@@ -27,7 +27,9 @@ const Single = ({ item }) => {
                   <img key={index} src={icon} alt={"icons"} />
                 ))}
              </div>
-              <button>Lien Git hub</button>
+             <a href={item.lien}>
+                Lien du site 
+              </a>
             </motion.div>
           </div>
         </div>

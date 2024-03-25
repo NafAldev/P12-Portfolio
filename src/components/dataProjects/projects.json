@@ -9,7 +9,7 @@
         "../icon/react.png",
         "../icon/redux.png"
         ],
-      "lien": "https://github.com/NafAldev/P11-ArgentBank.git"
+      "lien": "https://argent-bank-p11.netlify.app/"
     
     },
     {
@@ -23,7 +23,7 @@
             "../icon/website.png"
             
         ],
-        "lien": "https://github.com/NafAldev/Nina.Carducci.git"
+        "lien": "https://nafaldev.github.io/Nina.Carducci/"
         
     },
     {
@@ -37,7 +37,7 @@
             "../icon/js.png",
             "../icon/sass.png"
         ],
-        "lien": "https://github.com/NafAldev/P8_KASA"
+        "lien": "https://kasa-location-imm.netlify.app/"
         
     }
 

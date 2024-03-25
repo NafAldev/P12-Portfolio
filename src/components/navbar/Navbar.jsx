@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href='https://github.com/NafAldev' >
           <FontAwesomeIcon icon={faGithub} className='navbar-icon'/>
         </a>
-        <a href='#'>
+        <a href='https://www.linkedin.com/in/nafissa-allouchy-349632300/'>
           <FontAwesomeIcon icon={faLinkedin} className='navbar-icon' /> 
         </a>
         </div>

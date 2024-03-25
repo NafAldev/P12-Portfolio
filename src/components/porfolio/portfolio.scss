@@ -67,6 +67,7 @@
 
       @include tablet{
         padding: 0 20px ;
+        gap: 10px;
       }
 
       .imageContainer {
@@ -74,6 +75,9 @@
         height: 50%;
         border-radius: 5px;   
         overflow: hidden;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
        
 
         @include mobile {
@@ -84,13 +88,9 @@
 
         img {
           width: 100%;
-          height: 100%;
+          
           border-radius: 5px;  
-
-          @include mobile {
-            object-fit: contain;
-
-          }
+          object-fit: cover;
 
           @include tablet{
             width: 100%;
@@ -105,6 +105,9 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        align-items: center;
+        justify-content: center;
+      
         
 
         @include mobile {
@@ -141,6 +144,7 @@
         p {
           color: white;
           font-size: 20px;
+          text-align: center;
 
           @include mobile {
             font-size: 15px;
@@ -149,13 +153,17 @@
             font-size: 18px;
           }
 
-          
+
         }
         .icons-tech{
           display: flex;
           gap: 15px;
           
+          
           img {
+            width: 30px;
+            height: 30px ;
+
             @include mobile {
               height: 40px;
               width: 40px;
@@ -163,13 +171,14 @@
           }
         }
 
-        button {
+        a {
           background-color: rebeccapurple;
           border: none;
           border-radius: 10px;
           padding: 10px;
           width: 200px;
           cursor: pointer;
+          text-align: center;
         }
       }
     }
